@@ -54,7 +54,7 @@ contract IndustrialArbitrator {
         emit MaintenanceTriggered(proofHash);
     }
 }
-´´´solidity
+---
 
 
 ## 🌟 The Vision
