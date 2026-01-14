@@ -110,7 +110,7 @@ industrial-mamba/
 │   ├── IsaacLabEnvModified     # directory with IsaacLab modified Environment configuration (based on the Franka standard environment from NVIDIA)
 │   └── info.txt                
 ├── contracts/                  # Solidity Smart Contracts (Ethereum/Sui)
-│   └── Arbitrator.sol          # On-chain maintenance escrow and logic
+│   └── Contract.sol            # On-chain maintenance escrow and logic
 ├── hardhat.config.js           # Unit tests for both AI models and contracts
 ├── README.md                   
 ├── requirements.txt            # Python requirements   
