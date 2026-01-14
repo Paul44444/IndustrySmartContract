@@ -79,3 +79,37 @@ graph TD
     C -->|Condition Met| D[zk-Proof Generation]
     D -->|Verified Inference| E[Smart Contract: Sui/Ethereum]
     E -->|Automated Payout| F[Maintenance Crew / Insurance]
+
+## 🏗️ Repository Structure
+
+```text
+industrial-mamba/
+├── data/               # High-fidelity CNC & Physics datasets (NASA Milling)
+├── src/                # Python source code for AI and Physics modeling
+│   ├── model.py        # Mamba-3 SSM Architecture implementation
+│   └── processor.py    # Signal processing and FFT logic for CNC data
+├── contracts/          # Solidity Smart Contracts (Ethereum/Sui)
+│   └── Arbitrator.sol  # On-chain maintenance escrow and logic
+├── tests/              # Unit tests for both AI models and contracts
+├── requirements.txt    # Python dependencies
+└── package.json        # Web3 and Hardhat/Thirdweb dependencies
+
+## **🚀 Getting Started**
+Follow these steps to set up the environment and run the industrial arbiter locally.
+
+1. Clone the repository
+```
+git clone [https://github.com/your-username/industrial-mamba.git](https://github.com/your-username/industrial-mamba.git)
+cd industrial-mamba
+```
+2. Set Up Python Environment
+```
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+3. Install Web3 Tools
+```
+npm install
+npx thirdweb deploy
+```
