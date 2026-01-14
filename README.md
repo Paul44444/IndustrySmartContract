@@ -1,55 +1,32 @@
-## Getting Started
+# 🏗️ Industrial-Mamba: Autonomous Physical Arbitrator
 
-Create a project using this example:
+**Bridging High-Fidelity Physics with On-Chain Execution via State Space Models (SSMs)**
 
-```bash
-npx thirdweb create --contract --template hardhat-javascript-starter
-```
+[![Hackathon](https://img.shields.io/badge/EasyA-Consensus_Hong_Kong-blue?style=for-the-badge&logo=blockchaindotcom)](https://consensus.easyA.io)
+[![Model](https://img.shields.io/badge/AI-Mamba--3-green?style=for-the-badge&logo=nvidia)](https://arxiv.org/abs/2312.00752)
+[![Field](https://img.shields.io/badge/Industry-DePIN_/_Manufacturing-orange?style=for-the-badge)](#)
 
-You can start editing the page by modifying `contracts/Contract.sol`.
+---
 
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) to learn more.
+## 🌟 The Vision
+Current smart contracts are "blind" to the complexity of the physical world. They can handle simple temperature thresholds, but they cannot interpret the **vibration signatures** of a failing CNC bearing or the **harmonic distortion** in a power grid.
 
-## Building the project
+**Industrial-Mamba** is a decentralized "Subjective Oracle." It leverages the **Mamba architecture (SSM)** to process high-frequency industrial telemetry and verify Service Level Agreements (SLAs) on-chain.
 
-After any changes to the contract, run:
+### Why Mamba?
+Traditional Transformers suffer from $O(N^2)$ complexity, making real-time industrial monitoring expensive. Mamba provides **Linear Scaling $O(N)$**, allowing us to:
+1.  Process **infinite context windows** of sensor logs.
+2.  Run inference at the **edge** (factory floor) with minimal latency.
+3.  Maintain a continuous "Physical State" of high-value assets.
 
-```bash
-npm run build
-# or
-yarn build
-```
+---
 
-to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) detected on your contract.
+## 🛠️ System Architecture
 
-## Deploying Contracts
-
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
-
-```bash
-npm run deploy
-# or
-yarn deploy
-```
-
-> [!IMPORTANT]
-> This requires a secret key to make it work. Get your secret key [here](https://thirdweb.com/dashboard/settings/api-keys).
-> Pass your secret key as a value after `-k` flag.
-> ```bash
-> npm run deploy -- -k <your-secret-key>
-> # or
-> yarn deploy -k <your-secret-key>
-
-## Releasing Contracts
-
-If you want to release a version of your contracts publicly, you can use one of the followings command:
-
-```bash
-npm run release
-# or
-yarn release
-```
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+```mermaid
+graph TD
+    A[Industrial Sensors: CNC/Physics] -->|High-Freq Data| B(Mamba-3 Inference Engine)
+    B -->|Anomaly Detection| C{AI Judge}
+    C -->|Condition Met| D[zk-Proof Generation]
+    D -->|Verified Inference| E[Smart Contract: Sui/Ethereum]
+    E -->|Automated Payout| F[Maintenance Crew / Insurance]
