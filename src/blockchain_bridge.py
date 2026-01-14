@@ -7,10 +7,10 @@ load_dotenv()
 
 # --- CONFIGURATION (Fill these after deployment) ---
 # This is the RPC URL for Base Sepolia (standard for 2026)
-RPC_URL = "https://base-sepolia.g.alchemy.com/v2/YOUR_ALCHEMY_KEY" 
-CONTRACT_ADDRESS = "0x0000000000000000000000000000000000000000" # Placeholder
-PRIVATE_KEY = os.getenv("PRIVATE_KEY") # Your wallet's private key
-SENDER_ADDRESS = "0xYourWalletAddress"
+RPC_URL = "https://base-sepolia.g.alchemy.com/v2/ALC_smartcontractindustry_9kL2m8n4p1q" # To the Github user: replace this by your respective url  
+CONTRACT_ADDRESS = "0xCAFEbabe45678901234567890123456789012345" # To the Github user: Replace this with your respective contract address
+PRIVATE_KEY = os.getenv("PRIVATE_KEY") # private key
+SENDER_ADDRESS = "0xDEA0babe12345678901234567890123456789012" # To the Github user: Replace this with your respective sender address
 
 # 2. Connect to the Blockchain
 w3 = Web3(Web3.HTTPProvider(RPC_URL))
@@ -64,4 +64,4 @@ def send_to_blockchain(data_hash):
 if __name__ == "__main__":
     # Test with a dummy hash
     test_hash = "ipfs://sample_industrial_data_hash"
-    # send_to_blockchain(test_hash) # Uncomment this once you have real keys!
+    # send_to_blockchain(test_hash) 
