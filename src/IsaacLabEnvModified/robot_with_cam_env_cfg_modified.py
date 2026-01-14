@@ -72,22 +72,6 @@ class ObjectTableSceneCfg(InteractiveSceneCfg):
         prim_path="/World/light",
         spawn=sim_utils.DomeLightCfg(color=(0.75, 0.75, 0.75), intensity=3000.0),
     )
-    
-
-    #A # info (paul): camera:
-    #A camera = CameraCfg(
-    #A prim_path="{ENV_REGEX_NS}/Robot/panda_hand/Camera",
-    #A update_period=0,
-    #A resolution=(128, 128),
-    #A data_types=["rgb"],
-    #A spawn=CameraCfg.SpawnCfg(
-    #A     translation=(0.05, 0.0, 0.05),   # relative to link
-    #A     rotation=(0.707, 0.0, 0.707, 0.0),
-    #A ),
-
-    # info (paul): camera:
-    #A sensors: dict[str, SensorBaseCfg] = {
-    #A     "camera": 
         
     camera = TiledCameraCfg(
         prim_path="{ENV_REGEX_NS}/Robot/panda_hand/paul_cam",
