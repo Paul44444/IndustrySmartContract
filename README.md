@@ -115,3 +115,7 @@ pip install -r requirements.txt
 npm install
 npx thirdweb deploy
 ```
+4. Set Up IsaacLab repository:
+Set up an NVIDIA IsaacLab repository of the Franka robot ([![Overview over IsaacLabEnvs](https://isaac-sim.github.io/IsaacLab/main/source/overview/environments.html))
+
+
