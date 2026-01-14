@@ -113,7 +113,7 @@ Follow these steps to set up the environment and run the industrial arbiter loca
 
 1. Clone the repository
 ```
-git clone [https://github.com/your-username/industrial-mamba.git](https://github.com/your-username/industrial-mamba.git)
+git clone [https://github.com/your-username/industrial-mamba.git](https://github.com/Paul44444/industrial-mamba.git)
 cd industrial-mamba
 ```
 2. Set Up Python Environment
