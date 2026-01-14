@@ -116,28 +116,6 @@ class ObjectTableSceneCfg(InteractiveSceneCfg):
         filter_prim_paths_expr=["{ENV_REGEX_NS}/Table", "/World/GroundPlane"],
     )
 
-
-    #Acamera = CameraCfg(
-    #A    prim_path="{ENV_REGEX_NS}/PaulCam", #"{ENV_REGEX_NS}/Robot/panda_hand/paulfront_cam",
-    #A    update_period=0.0,
-    #A    width=128,
-    #A    height=128,
-    #A    data_types=["rgb"],
-    #A    spawn=sim_utils.PinholeCameraCfg(
-    #A        focal_length=24.0,
-    #A        focus_distance=400.0,
-    #A        horizontal_aperture=20.955,
-    #A        clipping_range=(0.1, 1.0e5),
-    #A    ),
-    #A    offset=CameraCfg.OffsetCfg(
-    #A        pos=(0.05, 0.0, 0.05),
-    #A        rot=(0.707, 0.0, 0.707, 0.0),
-    #A        convention="ros",   # important: tells how rot is interpreted
-    #A    ),
-    #A)
-
-
-
 ##
 # MDP settings
 ##
