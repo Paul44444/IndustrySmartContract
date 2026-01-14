@@ -93,6 +93,7 @@ industrial-mamba/
 ├── tests/              # Unit tests for both AI models and contracts
 ├── requirements.txt    # Python dependencies
 └── package.json        # Web3 and Hardhat/Thirdweb dependencies
+```
 
 ## **🚀 Getting Started**
 Follow these steps to set up the environment and run the industrial arbiter locally.
