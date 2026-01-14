@@ -1,1 +1,3 @@
 We used a benchmark CNC-milling dataset provided by NASA to evaluate the model.
+In addition we connect the model to IsaacLab where images are generated within the simulation. 
+Both datasets are processed by the Mamba AI model. 
