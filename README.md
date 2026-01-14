@@ -121,9 +121,9 @@ Set up an NVIDIA IsaacLab repository of the Franka robot ([Overview over IsaacLa
 5. Adjust paths and File locations:
 Add the modified environment from the Github folder src/IsaacLabEnvModified into your IsaacLab directory structure at the "manipulation"-directory. This can have a path e.g.
 ```
-/home/paul/miniconda3/envs/env_isaaclab1/lib/python3.11/site-packages/isaaclab/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/.
+/home/user/miniconda3/envs/env_isaaclab1/lib/python3.11/site-packages/isaaclab/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/.
 ```
 Moreover, the file train.py should be added at the reinforcement_learning path under the learning strategy, e.g. for skrl it could be:
 ```
-/home/paul/IsaacLab/scripts/reinforcement_learning/skrl.
+/home/user/IsaacLab/scripts/reinforcement_learning/skrl.
 ```
