@@ -97,15 +97,25 @@ graph TD
 
 ```text
 industrial-mamba/
-├── data/               # High-fidelity CNC & Physics datasets (NASA Milling)
-├── src/                # Python source code for AI and Physics modeling
-│   ├── model.py        # Mamba-3 SSM Architecture implementation
-│   └── processor.py    # Signal processing and FFT logic for CNC data
-├── contracts/          # Solidity Smart Contracts (Ethereum/Sui)
-│   └── Arbitrator.sol  # On-chain maintenance escrow and logic
-├── tests/              # Unit tests for both AI models and contracts
-├── requirements.txt    # Python dependencies
-└── package.json        # Web3 and Hardhat/Thirdweb dependencies
+├── data/                       # High-fidelity CNC & Physics datasets (NASA Milling)
+│   ├── images                  # folder with png-files, saved from IsaacLab robot simulation
+│   ├── mill.csv                # CNC-data (NASA Dataset)
+│   └── data_info.txt            
+├── src/                        # Python source code for AI and Physics modeling
+│   ├── main.py                 # Main file for running the architecture 
+│   ├── blockchain_bridge.py    # Mamba-3 SSM Architecture implementation
+│   ├── mamba_notary.py         # Mamba-3 SSM Architecture implementation
+│   ├── train.py                # Modified file for running the IsaacLab Robot Environment 
+│   ├── my-contract.js          # manage Contract
+│   ├── IsaacLabEnvModified     # directory with IsaacLab modified Environment configuration (based on the Franka standard environment from NVIDIA)
+│   └── info.txt                
+├── contracts/                  # Solidity Smart Contracts (Ethereum/Sui)
+│   └── Arbitrator.sol          # On-chain maintenance escrow and logic
+├── hardhat.config.js           # Unit tests for both AI models and contracts
+├── README.md                   
+├── requirements.txt            # Python requirements   
+├── package-lock.json           
+└── package.json                # Web3 and Hardhat/Thirdweb dependencies
 ```
 
 ## **🚀 Getting Started**
