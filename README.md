@@ -30,7 +30,7 @@ Industrial data is too massive for the blockchain, but industrial *trust* is too
 
 ## 🔄 The Workflow (The "Golden Thread")
 
-1.  **Data Capture:** CNC machine vibrations are streamed to an edge-node.
+1.  **Data Capture:** (A) CNC machine vibrations are streamed to an edge-node and (B) A robot, modeled in IsaacLab collects image data
 2.  **Mamba Inference:** A Mamba model analyzes the "State Space" of the machine.
 3.  **zk-Proof:** The system generates a SNARK proof that the machine is at 90% failure risk.
 4.  **Ethereum Trigger:** The proof is submitted to the `MaintenanceEscrow.sol` contract.
@@ -72,14 +72,24 @@ Traditional Transformers suffer from $O(N^2)$ complexity, making real-time indus
 
 ## 🛠️ System Architecture
 
-```mermaid
 graph TD
-    A[Industrial Sensors: CNC/Physics] -->|High-Freq Data| B(Mamba-3 Inference Engine)
-    B -->|Anomaly Detection| C{AI Judge}
-    C -->|Condition Met| D[zk-Proof Generation]
-    D -->|Verified Inference| E[Smart Contract: Sui/Ethereum]
+    subgraph Data_Collection [Multimodal Data Acquisition]
+        A1[CNC/Physics Sensors] -->|Time-Series Logs| B
+        A2[IsaacLab Robot Sim] -->|PNG Vision Frames| B
+    end
+
+    B(Mamba-3 Inference Engine) -->|Anomaly Detection| C{AI Judge}
+    
+    C -->|Verified| D[zk-Proof Generation]
+    C -->|Alert| G[Log Local Error]
+    
+    D -->|Hash + Proof| E[Smart Contract: Ethereum/Base]
     E -->|Automated Payout| F[Maintenance Crew / Insurance]
-```
+
+    %% Styling for clarity
+    style Data_Collection fill:#f9f9f9,stroke:#333,stroke-dasharray: 5 5
+    style B fill:#e1f5fe,stroke:#01579b
+    style E fill:#e8f5e9,stroke:#2e7d32
 
 ## 🏗️ Repository Structure
 
