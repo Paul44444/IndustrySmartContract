@@ -79,6 +79,7 @@ graph TD
     C -->|Condition Met| D[zk-Proof Generation]
     D -->|Verified Inference| E[Smart Contract: Sui/Ethereum]
     E -->|Automated Payout| F[Maintenance Crew / Insurance]
+```
 
 ## 🏗️ Repository Structure
 
