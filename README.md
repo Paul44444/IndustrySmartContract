@@ -4,7 +4,7 @@
 
 [![Hackathon](https://img.shields.io/badge/EasyA-Consensus_Hong_Kong-blue?style=for-the-badge&logo=blockchaindotcom)](https://www.easya.io/events/easya-consensus-hong-kong-hackathon)
 [![Model](https://img.shields.io/badge/AI-Mamba--3-green?style=for-the-badge&logo=nvidia)](https://arxiv.org/abs/2312.00752)
-[![Field](https://img.shields.io/badge/Industry-DePIN_/_Manufacturing-orange?style=for-the-badge)](#)
+[![Field](https://img.shields.io/badge/Industry-DePIN_/_Manufacturing-orange?style=for-the-badge)](https://en.wikipedia.org/wiki/Decentralized_physical_infrastructure_network)
 
 ---
 
