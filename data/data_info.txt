@@ -1,1 +1,1 @@
-Directory with CNC- and other data, evaluated by Mamba.
+We used a benchmark CNC-milling dataset provided by NASA to evaluate the model.
