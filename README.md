@@ -72,6 +72,7 @@ Traditional Transformers suffer from $O(N^2)$ complexity, making real-time indus
 
 ## 🛠️ System Architecture
 
+```mermaid
 graph TD
     subgraph Data_Collection [Multimodal Data Acquisition]
         A1[CNC/Physics Sensors] -->|Time-Series Logs| B
@@ -90,6 +91,7 @@ graph TD
     style Data_Collection fill:#f9f9f9,stroke:#333,stroke-dasharray: 5 5
     style B fill:#e1f5fe,stroke:#01579b
     style E fill:#e8f5e9,stroke:#2e7d32
+```
 
 ## 🏗️ Repository Structure
 
