@@ -2,7 +2,7 @@ import os
 from web3 import Web3
 from dotenv import load_dotenv
 
-# 1. Load your credentials (we will put these in a .env file for safety)
+# 1. Loads credentials (we will put these in a .env file for safety)
 load_dotenv()
 
 # --- CONFIGURATION (Fill these after deployment) ---
